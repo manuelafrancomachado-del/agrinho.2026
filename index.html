@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Site educativo sobre agricultura sustentável, impactos de agrotóxicos e queimadas">
+    <title>Futuro Sustentável - Agro Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Botão de acessibilidade fixo -->
+    <div class="botao-acessibilidade" id="botaoAcessibilidade" aria-label="Botão de acessibilidade">
+        ♿
+    </div>
+
+    <!-- Menu de acessibilidade (oculto inicialmente) -->
+    <div class="menu-acessibilidade" id="menuAcessibilidade">
+        <button id="aumentarFonte" aria-label="Aumentar fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir fonte">A-</button>
+        <button id="altoContraste" aria-label="Ativar alto contraste">🌓 Alto Contraste</button>
+    </div>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="container">
+            <h1>🌱 Futuro Sustentável</h1>
+            <p class="subtitulo">Equilibrando produção agrícola e meio ambiente</p>
+        </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio" class="secao">
+            <div class="container">
+                <h2>Bem-vindo ao Futuro Sustentável</h2>
+                <p>Este site foi criado para conscientizar moradores da zona rural sobre práticas agrícolas sustentáveis, os impactos do uso excessivo de agrotóxicos e os danos causados por queimadas.</p>
+                <p>Juntos podemos construir um <strong>Agro forte e um futuro sustentável</strong>, equilibrando produção e preservação ambiental.</p>
+                <img src="https://placehold.co/800x400/4CAF50/FFFFFF?text=Agricultura+Sustentável" alt="Imagem ilustrativa de agricultura sustentável com plantas e solo saudável" class="imagem-destaque">
+            </div>
+        </section>
+
+        <!-- Seção Problema -->
+        <section id="problema" class="secao fundo-claro">
+            <div class="container">
+                <h2>🚨 O Problema que enfrentamos</h2>
+                <article>
+                    <h3>Uso excessivo de agrotóxicos</h3>
+                    <p>Os agrotóxicos em excesso contaminam o solo, a água e os alimentos, prejudicando a saúde humana e o meio ambiente.</p>
+                </article>
+                <article>
+                    <h3>Queimadas na agricultura</h3>
+                    <p>As queimadas destroem a vegetação, matam animais, poluem o ar e contribuem para o aquecimento global.</p>
+                </article>
+                <article>
+                    <h3>Produção sem planejamento</h3>
+                    <p>Práticas agrícolas sem cuidado causam erosão, perda de nutrientes do solo e desertificação.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Soluções Sustentáveis -->
+        <section id="solucoes" class="secao">
+            <div class="container">
+                <h2>🌿 Soluções Sustentáveis</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>Controle biológico</h3>
+                        <p>Use predadores naturais para combater pragas, reduzindo o uso de agrotóxicos.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Rotação de culturas</h3>
+                        <p>Alternar plantações mantém o solo fértil e reduz doenças.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Compostagem</h3>
+                        <p>Transforme restos orgânicos em adubo natural, sem queimadas.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Manejo sem queimadas</h3>
+                        <p>Use técnicas como plantio direto e cobertura do solo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Quiz (Funcionalidade interativa) -->
+        <section id="quiz" class="secao fundo-claro">
+            <div class="container">
+                <h2>📋 Quiz: Avalie seus hábitos ambientais</h2>
+                <p>Responda as perguntas e descubra como você pode melhorar suas práticas agrícolas.</p>
+                
+                <div id="quiz-container">
+                    <div id="pergunta-container">
+                        <h3 id="pergunta-texto"></h3>
+                        <div id="alternativas-container"></div>
+                    </div>
+                    <div id="resultado-container" style="display: none;">
+                        <h3>🌱 Seu resultado</h3>
+                        <p id="resultado-texto"></p>
+                        <div id="dicas-container"></div>
+                        <button id="reiniciar-quiz">Refazer Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Conclusão -->
+        <section id="conclusao" class="secao">
+            <div class="container">
+                <h2>✅ Conclusão</h2>
+                <p>A agricultura sustentável é possível e necessária. Com pequenas mudanças no dia a dia, podemos reduzir o uso de agrotóxicos, evitar queimadas e proteger o solo e a água para as futuras gerações.</p>
+                <p><strong>Lembre-se:</strong> cuidar do meio ambiente hoje é garantir um futuro melhor para todos.</p>
+                <p><em>"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</em></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Projeto Agrinho 2026 - Em busca de um futuro sustentável</p>
+            <p>Desenvolvido para conscientização ambiental | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
